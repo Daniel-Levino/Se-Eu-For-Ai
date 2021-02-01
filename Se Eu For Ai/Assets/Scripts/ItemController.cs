@@ -19,7 +19,8 @@ public class ItemController : MonoBehaviour
 
     public void DestruirItem()
     {
-        Debug.Log("Item destuido!");
+        //Debug.Log("Item destuido!");
+        GameController.instance.contadorItens += 1;
         Destroy(gameObject);
     }
 }
